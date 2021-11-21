@@ -125,7 +125,7 @@ const styles = createThemedStyleSheet(theme => ({
 I know it's not a very 'React-ish' style, but i know such option and you have the option)
 
 ```ts
-const ReactingDemoComponent5 = () => {
+const BuilderDemoComponent = () => {
   return (
     <View>
       {/* Other components here  */}
@@ -140,7 +140,7 @@ const ReactingDemoComponent5 = () => {
 <h2>Reaction to changes</h2>
 To make component react to theme changes you can use different ways:
 
-If you use theme through 'useTheme' or 'withTheme', it's okay and you dont have to do anything else.
+<h3>If you use theme through 'useTheme' or 'withTheme', it's okay and you dont have to do anything else.</h3>
 
 If you use config directly or you use stylesheet you must use either 'withTheme' or 'useTheme' to make component react to changes.
 Here are the examples:
