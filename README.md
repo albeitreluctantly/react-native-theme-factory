@@ -20,7 +20,7 @@ I was thinking about how to create a convenient strongly typed theme creation ut
 
 <h1>Usage</h1>
 
-<h3>1) Create a list of themes and a config</h3>
+<h2>1) Create a list of themes and a config</h2>
 
 Create a list of your themes which can be Enum or object and a config with your themes properties.
 In config you have to set the desired properties for each theme specified in your themes list by making that property an object
@@ -58,7 +58,7 @@ enum Theme {
 }
 ```
 
-<h3>2) Pass it to the factory</h3>
+<h2>2) Pass it to the factory</h2>
 
 Factory will make all the job and return all the needed tools which you can export to use throughout the app.
 
@@ -75,10 +75,10 @@ export const {
 } = createThemeFactory(Theme, themesConfig)
 ```
 
-<h3>3) Use it in your app</h3>
+<h2>3) Use it in your app</h2>
 There are different ways to use theme in your components:
 
-<h4>Just use values from config.</h4>
+<h3>2.1) Just use values from config.</h3>
 If you're not planning to change theme on the fly or in specific component you use only property/ies that are not
 subject to change, you can end on this.
 You are also free to destructure any nested objects from your config and export them from the configuration file to then use it through the
