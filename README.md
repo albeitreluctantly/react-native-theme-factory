@@ -203,6 +203,15 @@ const styles = createThemedStyleSheet(theme => ({
 <p>Due to the way fabric parses theme config there are some restrictions for property names.</p>
 <p>Later i will give a better description of all the mechanism and the decisions behind it.</p>
 
+<p>For the given themes:</p>
+
+```ts
+enum Theme {
+  Light = 'light',
+  Dark = 'dark'
+}
+```
+
 <p>This will create separate colors for light and dark themes for "background" property.</p>
 
 ```ts
