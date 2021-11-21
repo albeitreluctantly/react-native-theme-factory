@@ -20,9 +20,9 @@ I was thinking about how to create a convenient strongly typed theme creation ut
 
 <h1>Usage</h1>
 
-<h3>Create a list of themes and a config</h3>
-First create a list of your themes which can be Enum or object and a config with your themes properties.
+<h3>1) Create a list of themes and a config</h3>
 
+Create a list of your themes which can be Enum or object and a config with your themes properties.
 In config you have to set the desired properties for each theme specified in your themes list by making that property an object
 with keys corresponding to themes names. See (1) in the following code fragment. The fabric will process that properties so that
 in result each theme will get its own value and you will be able to use it like 'theme.colors.background', not 'theme.colors.backgroud.light/dark'.
