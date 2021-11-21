@@ -117,9 +117,9 @@ const HOCDemoComponent = withTheme(({ theme: { colors } }) => {
 <h3>3.4) Stylesheet (NR)</h3>
 
 ```ts
-const StyleSheetDemoComponent = withTheme(({ theme: { colors } }) => {
+const StyleSheetDemoComponent = () => {
   return <View style={styles.container} />
-})
+}
 
 const styles = createThemedStyleSheet(theme => ({
   container: {
