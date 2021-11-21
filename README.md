@@ -197,6 +197,75 @@ const styles = createThemedStyleSheet(theme => ({
 }))
 ```
 
+<h1>Tricks</h1>
+<p>Not a plenty of them, but they are present.</p>
+<h2>1) Names intersection in config</h2>
+<p>Due to the way fabric parses theme config there are some restrictions for property names.</p>
+<p>Later i will a better description of all the mechanism and the decisions behind it.</p>
+
+<p>This will create separate colors for light and dark themes for "background" property.</p>
+
+```ts
+const config = {
+  colors: {
+    background: {
+      light: '#fff',
+      dark: '#111'
+    }
+  }
+}
+```
+<p>This will leave "background" object as it is.</p>
+
+```ts
+const incorrectConfig1 = {
+  colors: {
+    background: {
+      light: '#fff'
+    }
+  }
+}
+
+const incorrectConfig2 = {
+  colors: {
+    background: {
+      light: '#fff',
+      dark: '#111',
+      red: 'red'
+    }
+  }
+}
+```
+
+<h2>2) Unnecessary rerenders</h2>
+<p>As in MobX you win from using observers in more leaf components, here you can get optimizations from not making components react to theme change if it's not necessary for them.</p>
+
+<p>In this example you can not use useTheme hook in NestedComponent1 cause it will just lead to unnecessary rerender, component will be rerendered anyway cause its parent rerendered and it doesn't have any memoization.</p>
+```ts
+const UnnecessaryRerendersDemoComponent = () => {
+  useTheme()
+
+  return (
+    <View style={{ backgroundColor: colors.background }}>
+      <NestedComponent />
+      <NestedComponent2 />
+    </View>
+  )
+}
+
+const NestedComponent = () => {
+  useTheme()
+
+  return <View style={{ backgroundColor: colors.primary }} />
+}
+
+const NestedComponent2 = memo(() => {
+  useTheme()
+
+  return <View style={{ backgroundColor: colors.primary }} />
+}, isEqual)
+```
+
 <h1>License</h1>
 
 MIT. Feel free to use if you didn't get scared by all the written above or by looking into the code) But i'm not responsible for any money loss, anyone got fired, any fall of civilizations and intergalactic wars caused by using this plugin)
