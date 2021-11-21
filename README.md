@@ -75,9 +75,10 @@ export const {
 } = createThemeFactory(Theme, themesConfig)
 ```
 
-Then you can use theme in your components through different ways:
+<h3>3) Use it in your app</h3>
+There are different ways to use theme in your components:
 
-<h2>Just use values from config.</h2>
+<h4>Just use values from config.</h4>
 If you're not planning to change theme on the fly or in specific component you use only property/ies that are not
 subject to change, you can end on this.
 You are also free to destructure any nested objects from your config and export them from the configuration file to then use it through the
