@@ -278,4 +278,4 @@ const NestedComponent2 = memo(() => {
 
 <h1>License</h1>
 
-MIT. Feel free to use if you didn't get scared by all the written above or by looking into the code) But i'm not responsible for any money loss, anyone got fired, any fall of civilizations and intergalactic wars caused by using this plugin)
+MIT. Feel free to use if you haven't got scared by all the written above or by looking into the code) But i'm not responsible for any money loss, anyone got fired, any fall of civilizations and intergalactic wars caused by using this plugin)
