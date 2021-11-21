@@ -86,8 +86,7 @@ The explanation is given in section 4)
 There are different ways to use theme in your components:
 
 <h3>3.1) Just use values from config. (NR)</h3>
-If you're not planning to change theme on the fly or in specific component you use only property/ies that are not subject to change, you can end on this.
-<p><i>You are also free to destructure any nested objects from your config and export them from the configuration file to then use it through the
+<p><i>You are free to destructure any nested objects from your config and export them from the configuration file to then use it through the
 application as 'colors.background', not 'theme.colors.background'.</i></p>
 
 ```ts
@@ -144,12 +143,9 @@ const BuilderDemoComponent = () => {
 }
 ```
 <h2>4) Reaction to changes</h2>
-To make component react to theme changes you can use different ways:
-
-<h3>4.1) If you use theme through 'useTheme' or 'withTheme', it's okay and you dont have to do anything else.</h3>
-
-<h3>4.2) If you use config directly or you use stylesheet you must use either 'withTheme', 'useTheme' or 'builder' to make component react to changes.</h3>
-Here are the examples:
+<p>If you're not planning to change theme on the fly or in certain component you use only property/ies that are not subject to change, you can just use theme config directly or through stylesheet.</p>
+<p>To make component react to theme changes you must use either useTheme, withTheme or builder.</p>
+<p>You can combine usage ways as you want, here are the examples:</p>
 
 ```ts
 const ReactingDemoComponent1 = () => {
