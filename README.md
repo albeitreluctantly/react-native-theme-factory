@@ -80,6 +80,7 @@ There are different ways to use theme in your components:
 
 <h3>2.1) Just use values from config.</h3>
 If you're not planning to change theme on the fly or in specific component you use only property/ies that are not subject to change, you can end on this.
+
 <i>You are also free to destructure any nested objects from your config and export them from the configuration file to then use it through the
 application as 'colors.background', not 'theme.colors.background'.</i>
 
