@@ -76,24 +76,43 @@ export const {
 
 Then you can use theme in your components through different ways:
 
-a) Just use values from config. If you're not planning to change theme on the fly or in specific component you use only property/ies that are not
+<h2>Just use values from config.</h2>
+If you're not planning to change theme on the fly or in specific component you use only property/ies that are not
 subject to change, you can end on this.
-Tip: you are also free to destructure any nested objects from your config and export them from the configuration file to then use it through the
-application as 'colors.background', not 'theme.color.background'
+You are also free to destructure any nested objects from your config and export them from the configuration file to then use it through the
+application as 'colors.background', not 'theme.colors.background'.
 ```ts
 import { theme } from './theme'
 
-const Component = () => {
+const DemoComponent = () => {
   return <View style={{ backgroundColor: theme.colors.background }} />
 }
 ```
-b) useTheme hook
+<h2>useTheme hook</h2>
 
 ```ts
-import { useTheme } from './theme'
-
-const Component = () => {
+const HookDemoComponent = () => {
   const { colors } = useTheme()
   return <View style={{ backgroundColor: colors.background }} />
 }
+```
+<h2>withTheme HOC</h2>
+
+```ts
+const HOCDemoComponent = withTheme(({ theme: { colors } }) => {
+  return <View style={{ backgroundColor: colors.background }} />
+})
+```
+
+<h2>StyleSheet</h2>
+```ts
+const StyleSheetDemoComponent = withTheme(({ theme: { colors } }) => {
+  return <View style={styles.container} />
+})
+
+const styles = createThemedStyleSheet(theme => ({
+  container: {
+    backgroundColor: theme.colors.background
+  }
+}))
 ```
