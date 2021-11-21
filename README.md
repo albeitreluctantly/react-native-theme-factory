@@ -77,12 +77,13 @@ export const {
 ```
 
 <h2>3) Use it in your app</h2>
-There are different ways to use theme in your components:
 <p>
 - R mark means this way component reacts to theme changes</br>
 - NR means that it doesn't</br>
 The explanation is given in section 4)
 </p>
+
+There are different ways to use theme in your components:
 
 <h3>3.1) Just use values from config. (NR)</h3>
 If you're not planning to change theme on the fly or in specific component you use only property/ies that are not subject to change, you can end on this.
