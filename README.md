@@ -117,3 +117,37 @@ const styles = createThemedStyleSheet(theme => ({
   }
 }))
 ```
+
+To make component react to theme changes you can use different ways:
+
+If you use theme through 'useTheme' or 'withTheme', it's okay and you dont have to do anything else.
+
+If you use config directly or you use stylesheet you must use either 'withTheme' or 'useTheme' to make component react to changes.
+Here are the examples:
+```ts
+const ReactingDemoComponent1 = () => {
+  useTheme()
+
+  return <View style={{ backgroundColor: colors.background }} />
+}
+
+const ReactingDemoComponent2 = withTheme(() => {
+  return <View style={{ backgroundColor: colors.background }} />
+})
+
+const ReactingDemoComponent3 = () => {
+  useTheme()
+
+  return <View style={styles.container} />
+}
+
+const ReactingDemoComponent4 = withTheme(() => {
+  return <View style={styles.container} />
+})
+
+const styles = createThemedStyleSheet(theme => ({
+  container: {
+    backgroundColor: theme.colors.background
+  }
+}))
+```
