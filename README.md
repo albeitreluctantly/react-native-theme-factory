@@ -5,7 +5,7 @@ A utility that helps to create fully customized themes for React Native applicat
 <h1>Precautions</h1>
 
 1) Before writing anything further i want to apologize for my English cause i'm not a native speaker.
-2) It's quite a raw version of readme yet, i will make it look more neat later. For now it's just a bare flow of mind in places)
+2) It's quite a raw version of readme yet, i will make it look more neat later. For now in places it's just a bare flow of mind)
 3) The library itself hasn't been very well tested so there can be bugs. Send me an issue if you found one.
 
 <h1>What are the features?</h1>
