@@ -78,8 +78,11 @@ export const {
 
 <h2>3) Use it in your app</h2>
 There are different ways to use theme in your components:
+- R mark means this way component reacts to theme changes
+- NR means that it doesn't
+The explanation is given in section 4)
 
-<h3>3.1) Just use values from config.</h3>
+<h3>3.1) Just use values from config. (NR)</h3>
 If you're not planning to change theme on the fly or in specific component you use only property/ies that are not subject to change, you can end on this.
 <p><i>You are also free to destructure any nested objects from your config and export them from the configuration file to then use it through the
 application as 'colors.background', not 'theme.colors.background'.</i></p>
@@ -92,7 +95,7 @@ const DemoComponent = () => {
 }
 ```
 
-<h3>3.2) useTheme hook</h3>
+<h3>3.2) useTheme hook (R)</h3>
 
 ```ts
 const HookDemoComponent = () => {
@@ -100,7 +103,7 @@ const HookDemoComponent = () => {
   return <View style={{ backgroundColor: colors.background }} />
 }
 ```
-<h3>3.3) withTheme HOC</h2>
+<h3>3.3) withTheme HOC (R)</h2>
 
 ```ts
 const HOCDemoComponent = withTheme(({ theme: { colors } }) => {
@@ -108,7 +111,7 @@ const HOCDemoComponent = withTheme(({ theme: { colors } }) => {
 })
 ```
 
-<h3>3.4) Stylesheet</h3>
+<h3>3.4) Stylesheet (NR)</h3>
 
 ```ts
 const StyleSheetDemoComponent = withTheme(({ theme: { colors } }) => {
@@ -121,7 +124,7 @@ const styles = createThemedStyleSheet(theme => ({
   }
 }))
 ```
-<h3>3.5) Builder</h3>
+<h3>3.5) Builder (R)</h3>
 I know it's not a very 'React-ish' style, but i know such option and you have the option)
 
 ```ts
