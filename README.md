@@ -88,6 +88,7 @@ const DemoComponent = () => {
   return <View style={{ backgroundColor: theme.colors.background }} />
 }
 ```
+
 <h2>useTheme hook</h2>
 
 ```ts
@@ -150,4 +151,21 @@ const styles = createThemedStyleSheet(theme => ({
     backgroundColor: theme.colors.background
   }
 }))
+```
+
+There is also one more option - 'theme builder'
+
+```ts
+const ReactingDemoComponent5 = () => {
+  return (
+    <View style={{ flex: 1, backgroundColor: 'white' }}>
+      <Header />
+      {th(theme => (
+        <View style={{ backgroundColor: colors.primary }} />
+      ))}
+      {/* A lot of contents here */}
+      <Footer />
+    </View>
+  )
+}
 ```
