@@ -16,7 +16,7 @@ A utility that helps to create fully customized themes for React Native applicat
 I was thinking about how to create a convenient strongly typed theme creation utility which can be used across projects, encapsulates all the logic and leaves only to create configuration for the specific app. The most common way to make utils of such type is to use context with hooks. But i knew that if i had created a context which receives a custom themes configuration as a prop, it wouldn't have exposed it's types to consumer components via "useTheme". So in this case i would have to create custom hooks for each app, like "useAppTheme", providing it with types i want and it all would look like a mess a bit. And i also wanted to be able to use theme not only in components, but also in StylesSheet.create so as to not write [styles.container, {color: theme.colors.background}] everytime. So i ended up using abstract factory pattern and javascript's reference equality peculiarities to create a function that takes configuration and creates all the tools for using and switching the theme, created specifically for the given configuration.
 
 <h1>Usage</h1>
-
+First create a list of your themes which can be Enum or object and a config with your themes properties.
 ```ts
 const themesConfig = {
   colors: {
@@ -35,12 +35,18 @@ const themesConfig = {
     }
   }
 }
-
 enum Theme {
   Light = 'light',
   Dark = 'dark'
 }
+```
+Pass it to factory.
 
+```ts
+createThemeFactory(Theme, themesConfig)
+```
+Factory will make all the job and return all the needed tools.
+```ts
 export const {
   config: theme,
   getCurrentTheme,
