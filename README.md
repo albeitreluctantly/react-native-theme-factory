@@ -241,6 +241,7 @@ const incorrectConfig2 = {
 <p>As in MobX you win from using observers in more leaf components, here you can get optimizations from not making components react to theme change if it's not necessary for them.</p>
 
 <p>In this example you can not use useTheme hook in NestedComponent1 cause it will just lead to unnecessary rerender, component will be rerendered anyway cause its parent rerendered and it doesn't have any memoization.</p>
+
 ```ts
 const UnnecessaryRerendersDemoComponent = () => {
   useTheme()
