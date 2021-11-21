@@ -179,6 +179,17 @@ const ReactingDemoComponent5 = () => {
   )
 }
 
+const ReactingDemoComponent6 = () => {
+  return (
+    <View>
+      {/* Other components here */}
+      {th(() => (
+        <View style={styles.container} />
+      ))
+    </View>
+  )
+}
+
 const styles = createThemedStyleSheet(theme => ({
   container: {
     backgroundColor: theme.colors.background
