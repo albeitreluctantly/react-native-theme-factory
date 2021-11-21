@@ -25,12 +25,12 @@ A utility that helps to create fully customized themes for React Native applicat
 In config you have to set the desired properties for each theme specified in your themes list by making that property an object
 with keys corresponding to themes names. See (1) in the following code fragment. The fabric will process that properties so that
 in result each theme will get its own value and you will be able to use it like 'theme.colors.background', not 'theme.colors.backgroud.light/dark'.</p>
-<q>
+<p><i>
 I thought this is more convenient than creating a separate config for each theme.
 Otherwise you would have to create, for example, light theme object and then dark theme
 as a separate object extending light by destucturing and replacing properties.
 Or do the same with classes by extending. And with many nested objects it would get quite complicated.
-</q>
+</i></p>
 
 So the example of config:
 
@@ -81,10 +81,8 @@ There are different ways to use theme in your components:
 
 <h3>2.1) Just use values from config.</h3>
 If you're not planning to change theme on the fly or in specific component you use only property/ies that are not subject to change, you can end on this.
-
-
-<span style="color: blue;"><i>You are also free to destructure any nested objects from your config and export them from the configuration file to then use it through the
-application as 'colors.background', not 'theme.colors.background'.</i></span>
+<p><i>You are also free to destructure any nested objects from your config and export them from the configuration file to then use it through the
+application as 'colors.background', not 'theme.colors.background'.</i></p>
 
 ```ts
 import { theme } from './theme'
