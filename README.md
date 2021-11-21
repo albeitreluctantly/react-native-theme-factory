@@ -79,8 +79,8 @@ export const {
 <h2>3) Use it in your app</h2>
 There are different ways to use theme in your components:
 <p>
-- R mark means this way component reacts to theme changes
-- NR means that it doesn't
+- R mark means this way component reacts to theme changes</br>
+- NR means that it doesn't</br>
 The explanation is given in section 4)
 </p>
 
