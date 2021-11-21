@@ -144,6 +144,7 @@ To make component react to theme changes you can use different ways:
 
 <h3>4.2) If you use config directly or you use stylesheet you must use either 'withTheme' or 'useTheme' to make component react to changes.</h3>
 Here are the examples:
+
 ```ts
 const ReactingDemoComponent1 = () => {
   useTheme()
