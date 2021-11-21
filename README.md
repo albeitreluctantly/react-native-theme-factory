@@ -41,5 +41,14 @@ enum Theme {
   Dark = 'dark'
 }
 
-export const { config: theme, createThemedStyleSheet, useTheme } = createThemeFactory(Theme, themesConfig)
+export const {
+  config: theme,
+  getCurrentTheme,
+  setCurrentTheme,
+  listenToThemeChange,
+  useTheme,
+  withTheme,
+  createThemedStyleSheet,
+  th
+} = createThemeFactory(Theme, themesConfig)
 ```
