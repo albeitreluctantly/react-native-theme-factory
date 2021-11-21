@@ -201,7 +201,7 @@ const styles = createThemedStyleSheet(theme => ({
 <p>Not a plenty of them, but they are present.</p>
 <h2>1) Names intersection in config</h2>
 <p>Due to the way fabric parses theme config there are some restrictions for property names.</p>
-<p>Later i will a better description of all the mechanism and the decisions behind it.</p>
+<p>Later i will give a better description of all the mechanism and the decisions behind it.</p>
 
 <p>This will create separate colors for light and dark themes for "background" property.</p>
 
