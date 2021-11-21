@@ -17,6 +17,7 @@ I was thinking about how to create a convenient strongly typed theme creation ut
 
 <h1>Usage</h1>
 First create a list of your themes which can be Enum or object and a config with your themes properties.
+
 ```ts
 const themesConfig = {
   colors: {
@@ -40,6 +41,7 @@ enum Theme {
   Dark = 'dark'
 }
 ```
+
 Pass it to factory.
 
 ```ts
