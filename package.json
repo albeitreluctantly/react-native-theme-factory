@@ -1,0 +1,25 @@
+{
+  "name": "react-native-theme-factory",
+  "main": "index.js",
+  "version": "1.0.0",
+  "description": "A utility that helps to create fully customized themes for React Native applications, providing a variety of ways to use the resulting theme.",
+  "license": "MIT",
+  "url": "https://github.com/albeitreluctantly/react-native-theme-factory",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albeitreluctantly/react-native-theme-factory.git"
+  },
+  "author": "Andrei Sizov (github: albeitreluctantly)",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-native": "^0.66.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4",
+    "tslib": "^2.3.1",
+    "@types/react": "^17.0.34",
+    "@types/react-native": "^0.66.4",
+    "eslint": "7.14.0",
+    "prettier": "^2.4.1"
+  }
+}
