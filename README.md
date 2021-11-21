@@ -168,28 +168,22 @@ const ReactingDemoComponent4 = withTheme(() => {
   return <View style={styles.container} />
 })
 
+const ReactingDemoComponent5 = () => {
+  return (
+    <View>
+      {/* Other components here */}
+      {th(() => (
+        <View style={{ backgroundColor: colors.primary }} />
+      ))}
+    </View>
+  )
+}
+
 const styles = createThemedStyleSheet(theme => ({
   container: {
     backgroundColor: theme.colors.background
   }
 }))
-```
-
-There is also one more option - 'theme builder'
-
-```ts
-const ReactingDemoComponent5 = () => {
-  return (
-    <View style={{ flex: 1, backgroundColor: 'white' }}>
-      <Header />
-      {th(theme => (
-        <View style={{ backgroundColor: colors.primary }} />
-      ))}
-      {/* A lot of contents here */}
-      <Footer />
-    </View>
-  )
-}
 ```
 
 <h1>License</h1>
