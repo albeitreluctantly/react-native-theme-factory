@@ -4,9 +4,9 @@ A utility that helps to create fully customized themes for React Native applicat
 
 <h1>What are the features?</h1>
 
-- Strong typing. You don't have to use strings or selection from objects by key or remember all the deeply nested objects names you may create like "theme.colors.surface.cards.faint".
-- Different ways to use the resulting theme. Utility doesn't bind you to use certain methods of binding components to theme, but provides a wide range of possibilities. It has hooks and HOC's and builders and whatever you may want)
-- Possibility of creating a multitude of different themes and easily switching between them. Not only light and dark themes, you are free to define as many as you want. All of the usage variants are described below with examples.
+- <b>Strong typing</b>. You don't have to use strings or selection from objects by key or remember all the deeply nested objects names you may create like "theme.colors.surface.cards.faint".
+- <b>Different ways to use the resulting theme</b>. Utility doesn't bind you to use certain methods of binding components to theme, but provides a wide range of possibilities. It has hooks and HOC's and builders and whatever you may want)
+- <b>Possibility of creating a multitude of different themes and easily switching between them.</b> Not only light and dark themes, you are free to define as many as you want. All of the usage variants are described below with examples.
 
 <h1>How did you achieve this, what's the working principle and why did you choose it?</h1>
 
