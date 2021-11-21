@@ -108,7 +108,7 @@ const HOCDemoComponent = withTheme(({ theme: { colors } }) => {
 })
 ```
 
-<h3>2.4) StyleSheet</h3>
+<h3>2.4) Stylesheet</h3>
 
 ```ts
 const StyleSheetDemoComponent = withTheme(({ theme: { colors } }) => {
@@ -120,6 +120,21 @@ const styles = createThemedStyleSheet(theme => ({
     backgroundColor: theme.colors.background
   }
 }))
+```
+<h3>2.5) Builder</h3>
+I know it's not a very 'React-ish' style, but i know such option and you have the option)
+```ts
+const ReactingDemoComponent5 = () => {
+  return (
+    <View>
+      {/* Other components here  */}
+      {th(theme => (
+        <View style={{ backgroundColor: theme.colors.primary }} />
+      ))}
+      {/* A lot of contents here */}
+    </View>
+  )
+}
 ```
 
 To make component react to theme changes you can use different ways:
