@@ -58,11 +58,7 @@ enum Theme {
 }
 ```
 
-Then you have to pass it to the factory.
-
-```ts
-createThemeFactory(Theme, themesConfig)
-```
+<h3>2) Pass it to the factory</h3>
 
 Factory will make all the job and return all the needed tools which you can export to use throughout the app.
 
