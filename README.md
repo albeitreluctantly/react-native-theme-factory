@@ -105,6 +105,7 @@ const HOCDemoComponent = withTheme(({ theme: { colors } }) => {
 ```
 
 <h2>StyleSheet</h2>
+
 ```ts
 const StyleSheetDemoComponent = withTheme(({ theme: { colors } }) => {
   return <View style={styles.container} />
