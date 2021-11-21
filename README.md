@@ -82,8 +82,8 @@ There are different ways to use theme in your components:
 If you're not planning to change theme on the fly or in specific component you use only property/ies that are not subject to change, you can end on this.
 
 
-<i style="color: blue;">You are also free to destructure any nested objects from your config and export them from the configuration file to then use it through the
-application as 'colors.background', not 'theme.colors.background'.</i>
+<span style="color: blue;"><i>You are also free to destructure any nested objects from your config and export them from the configuration file to then use it through the
+application as 'colors.background', not 'theme.colors.background'.</i></span>
 
 ```ts
 import { theme } from './theme'
