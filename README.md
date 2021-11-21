@@ -1,6 +1,8 @@
 <h1>What's this?</h1>
 
 A utility that helps to create fully customized themes for React Native applications, providing a variety of ways to use the resulting theme.
+Before writing anything below i want to apologize for my English cause i'm not a native speaker. It's quite a raw version of readme yet, i will
+make it look more neat later.
 
 <h1>What are the features?</h1>
 
