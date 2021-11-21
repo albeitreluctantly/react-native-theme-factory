@@ -42,7 +42,7 @@ enum Theme {
 }
 ```
 
-Pass it to factory.
+Pass it to the factory.
 
 ```ts
 createThemeFactory(Theme, themesConfig)
