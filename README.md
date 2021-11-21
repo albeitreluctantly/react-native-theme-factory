@@ -47,7 +47,7 @@ Pass it to the factory.
 ```ts
 createThemeFactory(Theme, themesConfig)
 ```
-Factory will make all the job and return all the needed tools.
+Factory will make all the job and return all the needed tools which you can export to use throughout the app.
 ```ts
 export const {
   config: theme,
