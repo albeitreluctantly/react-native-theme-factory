@@ -166,3 +166,7 @@ const ReactingDemoComponent5 = () => {
   )
 }
 ```
+
+<h1>License</h1>
+
+MIT. Feel free to use. But i'm not responsible for any money loss, anyone got fired, any fall of civilizations and intergalactic wars happened due to use of this plugin)
