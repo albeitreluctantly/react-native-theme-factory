@@ -26,10 +26,12 @@ In config you have to set the desired properties for each theme specified in you
 with keys corresponding to themes names. See (1) in the following code fragment. The fabric will process that properties so that
 in result each theme will get its own value and you will be able to use it like 'theme.colors.background', not 'theme.colors.backgroud.light/dark'.</p>
 
-```diff
-+ I thought this is more convenient than creating a separate config for each theme. Otherwise you would have to create, for example, light theme object
+```html
+<p style="color: blue;"><i>
+  I thought this is more convenient than creating a separate config for each theme. Otherwise you would have to create, for example, light theme object
 and then dark theme as a separate object extending light by destucturing and replacing properties. Or do the same with classes by extending. And with
-many nested objects it would get quite complicated.</i></p>
+many nested objects it would get quite complicated.
+  </i></p>
 ```
 
 So the example of config:
