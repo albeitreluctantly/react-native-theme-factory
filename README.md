@@ -174,7 +174,7 @@ const ReactingDemoComponent5 = () => {
       {/* Other components here */}
       {th(() => (
         <View style={{ backgroundColor: colors.primary }} />
-      ))}
+      ))
     </View>
   )
 }
