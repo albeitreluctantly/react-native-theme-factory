@@ -13,7 +13,7 @@
   "module": "index.ts",
   "react-native": "index.ts",
   "source": "index.ts",
-  "types": "react-native-reanimated.d.ts",
+  "types": "index.ts",
   "peerDependencies": {
     "react": "^17.0.2",
     "react-native": "^0.66.3"
