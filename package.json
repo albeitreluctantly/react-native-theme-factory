@@ -1,7 +1,7 @@
 {
   "name": "react-native-theme-factory",
-  "main": "index.js",
-  "version": "1.0.0",
+  "main": "index.ts",
+  "version": "0.1.0",
   "description": "A utility that helps to create fully customized themes for React Native applications, providing a variety of ways to use the resulting theme.",
   "license": "MIT",
   "url": "https://github.com/albeitreluctantly/react-native-theme-factory",
