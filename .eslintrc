@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "extends": "@react-native-community",
+  "rules": {
+    "comma-dangle": "off",
+    "semi": "off",
+    "max-len": ["warn", 120],
+    "no-param-reassign": "warn",
+    "no-duplicate-imports": "warn",
+    "spaced-comment": "warn",
+    "@typescript-eslint/no-unused-vars": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/react-in-jsx-scope": "off",
+    "curly": "off"
+  }
+}
